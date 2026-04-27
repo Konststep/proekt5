@@ -8,7 +8,7 @@ int main()
     setlocale(LC_CTYPE, "rus");
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    int a[10] = { 54,2,62,1,75,6,11,8,73,9};
+    int a[10] = { 35,24,62,1,4,6,11,8,31,9};
 
     int i, t;
 
@@ -20,9 +20,9 @@ int main()
     }
     cout << endl;
 
-    for (t = 0; t < 10-1; t++)
+    for (t = 0; t < 10; t++)
     {
-        for (i = 1; i < 10; i++)
+        for (i = 9; i > 0; i--)
         {
             if (a[i] < a[i - 1])
             {
@@ -30,6 +30,11 @@ int main()
             }
 
         }
+        for (i = 0; i < 10; i++)
+        {
+            cout << a[i] << "\t";
+        }
+        cout << endl;
     }
 
     cout << "Массив после:" << endl;
