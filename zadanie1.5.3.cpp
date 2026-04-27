@@ -10,7 +10,7 @@ int main()
     SetConsoleOutputCP(1251);
     int a[3][6]{};
 
-    int i, j, min, max, min_i, min_j, max_i, max_j;
+    int i, j, min, max, min_i=0, min_j=0, max_i=0, max_j=0;
 
     cout << "Массив: " << endl;
 
